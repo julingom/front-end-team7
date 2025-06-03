@@ -1,0 +1,63 @@
+<html>
+    <head><title>새내가와 새섬을 위한 주린곰의 선물</title>
+    <style>
+    input[type=text]  {color : red;}
+    input[type=tel]  {color : #ff00ee;}
+    input:hover{background: aquamarine;}
+    input[type=text]:focus { font-size : 120%;}
+    input[type=text] {border : 2px solid rgb(147, 135, 235);border-radius : 5px;}
+    </style>
+
+
+    </head><br>
+    <body>
+        <h1>주린곰의 선물가게</h1>
+    <h4>새내기와 새섬을 위한 주린곰이 선물가게를 차리려고 합니다.<br>
+    가게를 차리기 전 수요조사를 위해 설문조사를 진행합니다!<br></h4>
+    <form name="redbean" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="redbean" />
+
+
+        <fieldset>
+            <legend>선물 받는 분 정보</legend>
+            이름 :<input type="text" size="15" name = "이름"><br>
+            학번 :<input type="number" size="15" name = "학번"><br>
+            전화번호 : <input type="tel" size="15" name = "전화번호"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>선물 주는 분 정보</legend>
+            이름 : <input type="text" size="15" name = "이름"><br>
+            학번 : <input type="number" size="15" name = "학번"><br>
+            전화번호 : <input type="tel" size="15" name = "전화번호"><br>
+            </fieldset>
+        <h3>다음중 선물 받는 분께 드릴 선물을 골라주세요</h3>
+        <input type="radio" size="15" name = "선물" value="쿠키">쿠키<br>
+        <input type="radio" size="15" name = "선물" value="음료수">음료수<br>
+        <input type="radio" size="15" name = "선물" value="음료수+쿠키">쿠키+음료수 쿠폰<br>
+
+        <h3>선물 받으시는 분이 어떤 분인지 선택해주세요</h3>
+        선물 받는 사람:<select name= “선물받는 사람 종류”>
+            <option value= “여새섬” >여새섬</option> 
+            <option value= “남새섬” >남새섬</option> 
+            <option value= “동새” >동새 </option> 
+            <option value= “편내기” >편내기</option>
+            <option value= “연인” >연인</option>
+            <option value= “기타” >기타</option>
+        </select>
+        <br>
+        <h3>수령하실 날짜를 선택해주세요</h3>
+        수령할 날짜:<input type="date"><br><br>
+
+        <h3>수령하실 날짜를 선택해주세요</h3>
+        <p>리뷰이벤트로 키링증정 이벤트를 하고 있습니다.<br>
+            입금 후, 얼마나 기대되는지 영상을 찍어서 첨부해주시면 예쁜 키링을 선물로 드립니다.<br>
+        </P>
+        <h3>영상 업로드 : <input type="file"> </h3>
+        
+        <input type=submit>제출 
+
+    </form>
+    
+    </body>
+</html>
